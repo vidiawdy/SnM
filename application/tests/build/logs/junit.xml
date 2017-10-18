@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="3" assertions="3" failures="0" errors="0" time="0.866472">
+    <testsuite name="General_Test" file="C:\xampp\htdocs\Hidoc_dashbord\application\tests\controllers\General_Test.php" fullPackage="General" tests="3" assertions="3" failures="0" errors="0" time="0.866472">
+      <testcase name="test_method_404" class="General_Test" file="C:\xampp\htdocs\Hidoc_dashbord\application\tests\controllers\General_Test.php" line="5" assertions="1" time="0.375476"/>
+      <testcase name="test_APPPATH" class="General_Test" file="C:\xampp\htdocs\Hidoc_dashbord\application\tests\controllers\General_Test.php" line="10" assertions="1" time="0.396497"/>
+      <testcase name="test_index_login" class="General_Test" file="C:\xampp\htdocs\Hidoc_dashbord\application\tests\controllers\General_Test.php" line="20" assertions="1" time="0.094499"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
