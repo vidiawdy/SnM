@@ -106,6 +106,32 @@ $assets_location = base_url()."assets/";
                         </li>
                     </ul>
                 </li>
+                 <li>
+                        <?php
+                          if ($this->session->has_userdata('admin')) {
+                              echo
+                                 '
+                                 <li>
+                                    <a href="'.base_url('index.php/Login_admin').'">'.$this->session->userdata("admin").'
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="'.base_url('index.php/Login_admin/logout').'">logout
+                                    </a>
+                                 </li>
+                                 ';
+                          }
+                          else{
+                              echo
+                                 '
+                                 <li>
+                                    <a href="'.base_url('index.php/Login_admin/index').'">login
+                                    </a>
+                                 </li>
+                                 
+                                 ';
+                          }
+                              ?></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
                     <ul class="dropdown-menu alert-dropdown">
@@ -136,6 +162,7 @@ $assets_location = base_url()."assets/";
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Seger Sumyah <b class="caret"></b></a>
                     <ul class="dropdown-menu">
+                       
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
                         </li>
@@ -146,9 +173,11 @@ $assets_location = base_url()."assets/";
                             <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
+<!--
                         <li>
                             <a href="<?php echo base_url();?>index.php/admin/dashboard/logout"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
+-->
                     </ul>
                 </li>
             </ul>
